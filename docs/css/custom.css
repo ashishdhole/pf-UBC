@@ -1,0 +1,115 @@
+/* Override primary color (top nav, active tab) */
+.md-header,
+.md-tabs {
+    background-color: #002145 !important;
+}
+
+.md-nav__link--active {
+    color: #002145 !important;
+}
+
+/* Style the sidebar navigation title */
+.md-nav__title {
+    font-size: 1.2rem !important;
+    font-weight: 700 !important;
+    color: #222222 !important;
+    text-transform: none !important;
+}
+
+/* Custom accent colors */
+:root {
+    --md-accent-fg-color: #002145;
+    --md-accent-fg-color--transparent: rgba(0, 33, 69, 0.1);
+}
+
+/* Increase header height */
+.md-header {
+    height: 80px;
+}
+
+.md-header__title {
+    height: 53px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    display: flex;
+}
+
+.md-header__button.md-logo img {
+    height: 53px;
+}
+
+.md-search {
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.katex-display {
+    font-size: 1.3em;
+    text-align: center;
+    margin: 1em 0;
+}
+
+/* Animate nav item hover with underline and color */
+.md-nav__link {
+    position: relative;
+    transition: color 0.3s ease;
+}
+
+.md-nav__link:hover {
+    color: #002145 !important;
+}
+
+.md-nav__link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0.1em;
+    width: 0;
+    height: 2px;
+    background-color: #002145;
+    transition: width 0.3s ease;
+}
+
+.md-nav__link:hover::after {
+    width: 100%;
+}
+
+.small-math {
+    font-size: 0.85em;
+}
+
+@keyframes float-glow {
+    0% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 10px #15ff00);
+    }
+
+    50% {
+        transform: translateY(-8px);
+        filter: drop-shadow(0 0 10px #0011ff);
+    }
+
+    100% {
+        transform: translateY(0);
+        filter: drop-shadow(0 0 10px #ff0000);
+    }
+}
+
+.float-glow-img {
+    animation: float-glow 3s ease-in-out infinite alternate;
+}
+
+.glow-img {
+    filter: drop-shadow(0 0 6px #00ffff);
+    animation: glow 1.5s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+    from {
+        filter: drop-shadow(0 0 2px #00ffff);
+    }
+
+    to {
+        filter: drop-shadow(0 0 10px #00ffff);
+    }
+}

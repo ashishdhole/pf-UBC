@@ -1,0 +1,38 @@
+site_name: pf-UBC
+nav:
+  - Home: index.md
+  - Introduction: introduction.md
+  - Getting Started: getting_started.md
+  - Examples: examples.md
+  
+theme:
+  name: material
+  logo: images/logo_white.png
+  palette:
+    - scheme: default
+      primary: indigo
+      accent: indigo
+  features:
+    - navigation.top
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - toc:
+      permalink: false
+  - attr_list
+  - footnotes
+  - pymdownx.arithmatex:
+      generic: true
+
+extra_css:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css
+  - css/custom.css
+
+extra_javascript:
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js
+  - https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js
+  - js/math-render.js
+
+extra:
+  generator: false
