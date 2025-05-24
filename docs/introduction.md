@@ -1,5 +1,5 @@
 <div style="display: flex; align-items: center; gap: 20px; justify-content: left;">
-  <img src="images/logo.png" alt="pf-UBC Logo" class="float-glow-img" width="100">
+  <img src="../images/logo.png" alt="pf-UBC Logo" class="float-glow-img" width="100">
   <h1 style="margin: 0; font-size: 3em; color: #000000; font-weight: bold;">pf-UBC</h1>
 </div>
 
