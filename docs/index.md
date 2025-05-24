@@ -11,7 +11,7 @@
 
 <div style="display: flex; align-items: center; gap: 20px; justify-content: center;">
   <video class="float-img" height="350" autoplay muted loop>
-    <source src="/videos/intro.mp4" type="video/mp4">
+    <source src="videos/intro.mp4" type="video/mp4">
     Your browser does not support the video tag.
   </video>
 </div>
