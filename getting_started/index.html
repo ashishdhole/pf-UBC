@@ -1,0 +1,682 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+      
+        <link rel="prev" href="../introduction/">
+      
+      
+        <link rel="next" href="../examples/">
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.14">
+    
+    
+      
+        <title>Getting Started - pf-UBC</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.342714a4.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.css">
+    
+      <link rel="stylesheet" href="../css/custom.css">
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#contents-of-the-package" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="pf-UBC" class="md-header__button md-logo" aria-label="pf-UBC" data-md-component="logo">
+      
+  <img src="../images/logo_white.png" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            pf-UBC
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              Getting Started
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-hidden="true"  type="radio" name="__palette" id="__palette_0">
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+
+<nav class="md-nav md-nav--primary" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="pf-UBC" class="md-nav__button md-logo" aria-label="pf-UBC" data-md-component="logo">
+      
+  <img src="../images/logo_white.png" alt="logo">
+
+    </a>
+    pf-UBC
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Home
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../introduction/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Introduction
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    Getting Started
+    
+  </span>
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contents-of-the-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contents of the package
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-pf-ubc-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of pf-UBC Directory Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-the-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Launching the Toolkit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-microstructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Microstructure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-input-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Input Files
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../examples/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Examples
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#contents-of-the-package" class="md-nav__link">
+    <span class="md-ellipsis">
+      Contents of the package
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#summary-of-pf-ubc-directory-structure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Summary of pf-UBC Directory Structure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#installation" class="md-nav__link">
+    <span class="md-ellipsis">
+      Installation
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#running-conditions" class="md-nav__link">
+    <span class="md-ellipsis">
+      Running Conditions
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#launching-the-toolkit" class="md-nav__link">
+    <span class="md-ellipsis">
+      Launching the Toolkit
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-microstructure" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Microstructure
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#generate-input-files" class="md-nav__link">
+    <span class="md-ellipsis">
+      Generate Input Files
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<div style="display: flex; align-items: center; gap: 20px; justify-content: left;">
+  <img src="images/logo.png" alt="pf-UBC Logo" class="float-glow-img" width="100">
+  <h1 style="margin: 0; font-size: 3em; color: #000000; font-weight: bold;">pf-UBC</h1>
+</div>
+
+<h2 id="contents-of-the-package"><span style="font-size: 1.2em; color: #000000;">Contents of the package</span></h2>
+<p style="text-align: justify; text-indent: 2em;">
+The pf-UBC (Phase-Field at UBC) simulation toolkit is structured for clarity, modularity, and ease of use. Below is an annotated breakdown of the directory hierarchy:
+</p>
+<pre>
+<span style="color:#ff0000;">             ┌─ <b>pf-UBC</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#ff6600;"><b>Makefile</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#228B22;"><b>launcher</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#0066cc;"><b>bin</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#009999;"><b>generate_micro.sh</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#009999;"><b>generate_micro_3d.sh</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#009999;"><b>gg_run.sh</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#9900cc;"><b>grain_growth.cpp</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#009999;"><b>abnormal_gg_run.sh</b></span>
+<span style="color:#ff0000;"> root_folder │     ├─</span> <span style="color:#9900cc;"><b>abnormal_grain_growth.cpp</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#009999;"><b>real_gg_run.sh</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#9900cc;"><b>real_grain_growth.cpp</b></span>
+<span style="color:#ff0000;">             │     ├─</span> <span style="color:#009999;"><b>gg_run_3d.sh</b></span>
+<span style="color:#ff0000;">             │     └─</span> <span style="color:#9900cc;"><b>grain_growth_3d.cpp</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#009999;"><b>cluster_install.sh</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#009999;"><b>submit.sh</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#009999;"><b>real_submit.sh</b></span>
+<span style="color:#ff0000;">             |  ├─</span> <span style="color:#009999;"><b>abnormal_submit.sh</b></span>
+<span style="color:#ff0000;">             |  └─</span> <span style="color:#009999;"><b>submit_3d.sh</b></span>
+</pre>
+
+<h2 id="summary-of-pf-ubc-directory-structure"><span style="font-size: 1.2em; color: #000000;">Summary of <code>pf-UBC</code> Directory Structure</span></h2>
+<p>--&gt; <code>bin/</code> — Simulation Scripts &amp; Executables
+Contains all executable scripts and C++ simulation code, <strong>clearly organized by simulation type (2D, 3D, abnormal, realistic)</strong>:</p>
+<ul>
+<li><code>grain_growth.cpp</code> → 2D simulation</li>
+<li><code>grain_growth_3d.cpp</code> → 3D simulation</li>
+<li><code>abnormal_grain_growth.cpp</code> → Abnormal grain growth</li>
+<li><code>real_grain_growth.cpp</code> → Realistic grain growth</li>
+<li>Accompanied <code>.sh</code> scripts for each type automate execution</li>
+</ul>
+<p>--&gt; <code>Makefile</code> — Build Automation
+Simplifies compilation of all simulation binaries with a single command:</p>
+<p>--&gt; <code>launcher</code> — Intractive launch execution
+launcher serves as the entry point or interface script to guide users through simulation setup.</p>
+<p>--&gt; <code>shell sripts</code> — Cluster submission scripts
+Cluster support is integrated via the submit.sh scripts and cluster_install.sh, making the package suitable for both local and high-performance computing environments.</p>
+<h2 id="installation"><span style="font-size: 1.2em; color: #000000;">Installation</span></h2>
+<p>After downloading the simulation toolkit folder from the repository, follow the folling command inside the <code>pf-UBC</code> folder</p>
+<div class="codehilite"><pre><span></span><code>make install
+</code></pre></div>
+
+<p>This will check for all the required packages and if any on them are not installed already it will prompt the user to install on the local system. <code>cluster_install.sh</code> make all the shell scripts executable for smooth operation of the toolkit.</p>
+<h2 id="running-conditions"><span style="font-size: 1.2em; color: #000000;">Running Conditions</span></h2>
+<p><code>pf-UBC</code> runs on all threads by default. The actual number of threads to use can be set at run stage, using the <code>OMP_NUM_THREADS</code> environment variable, as in</p>
+<div class="codehilite"><pre><span></span><code><span class="k">export</span><span class="w"> </span><span class="n">OMP_NUM_THREADS</span><span class="o">=</span><span class="mi">8</span>
+</code></pre></div>
+
+<p>The environment variable is unset by default.</p>
+<h2 id="launching-the-toolkit"><span style="font-size: 1.2em; color: #000000;">Launching the Toolkit</span></h2>
+<p>Once the toolkit is successfully installed, you can start the toolkit using launcher file.</p>
+<div class="codehilite"><pre><span></span><code>./launcher
+</code></pre></div>
+
+<p>You will see the following screen on the terminal.</p>
+<div class="codehilite"><pre><span></span><code><span class="err">░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░</span>
+
+<span class="w">        </span><span class="nx">Phase</span><span class="o">-</span><span class="nx">Field</span><span class="w"> </span><span class="nx">Grain</span><span class="o">-</span><span class="nx">Growth</span><span class="w"> </span><span class="nx">Toolkit</span><span class="w">       </span>
+
+<span class="err">░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░</span>
+
+<span class="w"> </span><span class="nx">Generate</span><span class="w"> </span><span class="nx">Microstructure</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="nx">Generate</span><span class="w"> </span><span class="mi">2</span><span class="nx">d</span><span class="w"> </span><span class="nx">microstructure</span>
+<span class="w"> </span><span class="mi">2</span><span class="p">)</span><span class="w"> </span><span class="nx">Generate</span><span class="w"> </span><span class="mi">3</span><span class="nx">d</span><span class="w"> </span><span class="nx">microstructure</span>
+
+<span class="w"> </span><span class="nx">Generate</span><span class="w"> </span><span class="nx">Input</span><span class="w"> </span><span class="nx">Files</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">3</span><span class="p">)</span><span class="w"> </span><span class="nx">Create</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="nx">file</span>
+<span class="w"> </span><span class="mi">4</span><span class="p">)</span><span class="w"> </span><span class="nx">Create</span><span class="w"> </span><span class="nx">real</span><span class="w"> </span><span class="nx">input</span><span class="w"> </span><span class="nx">file</span>
+
+<span class="w"> </span><span class="nx">Grain</span><span class="w"> </span><span class="nx">Growth</span><span class="w"> </span><span class="nx">Models</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">5</span><span class="p">)</span><span class="w"> </span><span class="nx">Run</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="nx">grain</span><span class="o">-</span><span class="nx">growth</span><span class="w"> </span><span class="nx">simulation</span>
+<span class="w"> </span><span class="mi">6</span><span class="p">)</span><span class="w"> </span><span class="nx">Run</span><span class="w"> </span><span class="nx">model</span><span class="w"> </span><span class="mi">3</span><span class="nx">d</span><span class="o">-</span><span class="nx">grain</span><span class="o">-</span><span class="nx">growth</span><span class="w"> </span><span class="nx">simulation</span>
+<span class="w"> </span><span class="mi">7</span><span class="p">)</span><span class="w"> </span><span class="nx">Run</span><span class="w"> </span><span class="nx">abnormal</span><span class="w"> </span><span class="nx">grain</span><span class="o">-</span><span class="nx">growth</span><span class="w"> </span><span class="nx">simulation</span>
+<span class="w"> </span><span class="mi">8</span><span class="p">)</span><span class="w"> </span><span class="nx">Run</span><span class="w"> </span><span class="nx">real</span><span class="w"> </span><span class="nx">grain</span><span class="o">-</span><span class="nx">growth</span><span class="w"> </span><span class="nx">simulation</span>
+
+<span class="w"> </span><span class="nx">Exit</span><span class="p">!</span><span class="w"> </span>
+<span class="w"> </span><span class="mi">9</span><span class="p">)</span><span class="w"> </span><span class="nx">Exit</span>
+
+<span class="err">░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░▒░</span>
+
+<span class="nx">Enter</span><span class="w"> </span><span class="kd">choice</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="o">-</span><span class="mi">9</span><span class="p">]:</span><span class="w"> </span>
+</code></pre></div>
+
+<p>You will observe that there are three sections in the launcher</p>
+<ul>
+<li>Generate Microstructure</li>
+<li>Generate Input Files</li>
+<li>Grain Growth Models</li>
+</ul>
+<p>Each section perform the operation as mentioned. The toolkit is made in such a way that you don't have to strictly follow the steps. For example, if you already have a microstructure and an input file ready, you can straight away perform the required grain growth simulation by choosing between 5-6. After every operation, the launcher will show main screen again unless <code>9) Exit</code> is chosen.</p>
+<h2 id="generate-microstructure"><span style="font-size: 1.2em; color: #000000;">Generate Microstructure</span></h2>
+<p>Generate Microstructure is a python based tool to create a microstructure of desired domain size and number of grains. By default the domain follows periodic boundary conditions in all directions and cannot be changed from the toolkit. But interested users can do madification in <code>bin/generate_micro.sh</code> or <code>bin/generate_micro_3d.sh</code> files. 
+<br>
+This section has two sub-sections</p>
+<div class="codehilite"><pre><span></span><code> Generate Microstructure 
+ 1) Generate 2d microstructure
+ 2) Generate 3d microstructure
+</code></pre></div>
+
+<p>In <code>Generate 2d microstructure</code>, three files are generated, <code>micro.txt</code> (Grain ID map — each element in the array represents a grain label (an integer) at a grid point.), <code>micro.png</code> and <code>friction.txt</code> (A scalar field file representing the spatial distribution of friction pressure or drag resistance, used to control the local evolution of grain boundaries or transformation fronts.). Seed will asked down the line for repeatability.</p>
+<p>In <code>Generate 3d microstructure</code>, only one vtk file will be generated.</p>
+<p><strong>Note</strong>: You can use the <code>Generate 3D microstructure</code> option to create both 2D and 3D initial microstructures by selecting the appropriate configuration. This gives users the flexibility to choose the output format—either .png or .vti — which will be saved in the results/ folder once the simulation begins.</p>
+<p>If the user wishes to use another method to generate the initial microstructure, they may do so. However, they must convert it into a Grain ID map, where each element in the array represents a grain label (an integer) at a grid point. The file must be renamed to <code>micro.txt</code> (or <code>micro.vtk</code>) and saved in the root folder of the toolkit. The toolkit reads only <code>micro.txt</code> or <code>micro.vtk</code> as valid microstructure inputs.</p>
+<h2 id="generate-input-files"><span style="font-size: 1.2em; color: #000000;">Generate Input Files</span></h2>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      <script id="__config" type="application/json">{"base": "..", "features": ["navigation.top"], "search": "../assets/javascripts/workers/search.d50fe291.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.13a4f30d.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/katex.min.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/katex@0.16.8/dist/contrib/auto-render.min.js"></script>
+      
+        <script src="../js/math-render.js"></script>
+      
+    
+  </body>
+</html>
